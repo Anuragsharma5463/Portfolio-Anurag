@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anurag Kumar Vishwakarma — AI/ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050510;--navy:#0b1024;--v:#8B5CF6;--c:#22D3EE;--tx:#e6e8f5;--mu:#a3a9c4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px;height:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;margin:0;letter-spacing:-.02em}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+a{color:inherit}:focus-visible{outline:2px solid var(--c);outline-offset:3px;border-radius:6px}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;background:#050510b8;backdrop-filter:blur(14px);border-bottom:1px solid #8b5cf633}
+nav{max-width:1100px;margin:auto;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}nav ul a{display:block;padding:8px 12px;font-size:14px;color:var(--mu);text-decoration:none;border-bottom:1px solid transparent}
+nav ul a:hover,nav ul a.on{color:#fff;border-color:var(--c)}
+#mb{display:none;min-width:44px;min-height:44px;background:none;border:1px solid #8b5cf655;color:#fff;border-radius:10px;font-size:20px}
+@media(max-width:760px){#mb{display:block}nav ul{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;background:#0b1024f2;padding:8px 20px}nav ul.open{display:flex}nav ul a{padding:14px 0}}
+section{max-width:1100px;margin:auto;padding:90px 20px}
+#hero{min-height:100vh;display:flex;align-items:center;position:relative;max-width:none;overflow:hidden}
+#hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#8b5cf614 1px,transparent 1px),linear-gradient(90deg,#8b5cf614 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at center,#000 25%,transparent 75%)}
+#cv{position:absolute;inset:0 0 0 35%;width:65%;height:100%}
+@media(max-width:760px){#cv{inset:0;width:100%;opacity:.45}}
+.hw{position:relative;max-width:1100px;margin:auto;width:100%;padding:90px 20px 40px}
+.eb{color:var(--c);font-size:14px}
+h1{font-size:clamp(40px,7vw,76px);line-height:1.04;font-weight:600;margin:14px 0;max-width:680px}
+.role{height:30px;color:var(--v);font-size:18px}.sub{max-width:520px;color:var(--mu);font-size:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.b{display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border-radius:99px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid #8b5cf666;background:#ffffff0d;transition:transform .2s,border-color .2s}
+.b:hover{transform:translateY(-2px);border-color:var(--c)}.b.s{background:linear-gradient(90deg,var(--v),var(--c));color:#050510;border:0}
+h2{font-size:clamp(30px,5vw,48px);font-weight:600}.k{color:var(--mu);max-width:640px;margin:10px 0 0}
+.g{background:linear-gradient(145deg,#141838a6,#080a1ca6);border:1px solid #8b5cf640;border-radius:20px;backdrop-filter:blur(12px)}
+.ab{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;margin-top:36px}@media(max-width:860px){.ab{grid-template-columns:1fr}}
+.ab p{color:#c3c8de;font-size:18px;margin:0 0 14px}
+.st{display:grid;grid-template-columns:1fr 1fr;gap:12px;list-style:none;margin:0;padding:0}.st li{padding:20px}.st li:nth-child(odd){transform:translateY(10px)}
+.st b{font:600 38px 'Space Grotesk',sans-serif;display:block}.st span{font-size:14px;color:var(--mu)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.tabs button{min-height:44px;padding:0 16px;border-radius:99px;background:none;border:1px solid #8b5cf655;color:var(--tx);font:inherit;font-size:14px;cursor:pointer}
+.tabs button[aria-pressed=true]{border-color:var(--c);background:#22d3ee22;color:var(--c)}
+#sk{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+#sk li{padding:10px 16px;font-size:14px;border-radius:12px;animation:in .35s both}#sk li small{display:none;color:var(--c);margin-left:8px}#sk li:hover small,#sk li:focus small{display:inline}
+@keyframes in{from{opacity:0;transform:scale(.92)}}
+.pj{padding:28px;margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px}@media(max-width:900px){.pj{grid-template-columns:1fr}}
+.pj h3{font-size:26px;line-height:1.2}.pj p{color:#c3c8de}
+.tg{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:14px 0}.tg li{border:1px solid #22d3ee55;color:var(--c);border-radius:8px;padding:3px 10px;font-size:12px}
+.hl{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;list-style:none;padding:0;margin:8px 0 0;font-size:14px;color:#c3c8de}@media(max-width:500px){.hl{grid-template-columns:1fr}}
+.hl li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--v);margin-right:8px}
+.vz{background:#050510aa;border-radius:16px;padding:14px}.vz svg{width:100%;display:block}
+.vz g[role=button]{cursor:pointer}.fl{stroke-dasharray:6 6;animation:fl 1.2s linear infinite}@keyframes fl{to{stroke-dashoffset:-12}}
+.dt{min-height:56px;background:#ffffff0d;border-radius:10px;padding:10px 12px;font-size:14px;margin:8px 0 0}.cp{font-size:12px;color:var(--mu);margin-top:8px}
+.tl{border-left:1px solid #8b5cf666;margin:36px 0 0;padding-left:28px;list-style:none;position:relative}.tl li{position:relative;margin-bottom:26px}
+.tl li::before{content:"";position:absolute;left:-34px;top:10px;width:11px;height:11px;border-radius:50%;background:var(--c);box-shadow:0 0 0 4px var(--bg)}
+.tl .g{padding:24px}.tl ul{padding-left:20px;color:#c3c8de;margin:12px 0 0}.tl ul li{margin:4px 0}.tl ul li::before{display:none}
+.ed{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}@media(max-width:760px){.ed{grid-template-columns:1fr}}.ed>div{padding:24px}
+#ct{text-align:center;position:relative;overflow:hidden;max-width:none;border-top:1px solid #8b5cf633;padding:110px 20px 0}#ct canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.4}
+#ct .in{position:relative;max-width:720px;margin:auto}#ct .btns{justify-content:center}
+footer{position:relative;margin-top:90px;padding:22px;border-top:1px solid #8b5cf633;color:var(--mu);font-size:14px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fl{animation:none}#sk li{animation:none}}
+#pb{position:fixed;top:0;left:0;right:0;height:2px;z-index:30;background:linear-gradient(90deg,var(--v),var(--c));transform-origin:left;transform:scaleX(0)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.pj{position:relative}.pj::before{content:"";position:absolute;inset:0;border-radius:20px;pointer-events:none;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),#22d3ee14,transparent 60%)}
+#glance{padding:0 20px;margin-top:-20px}.gl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0;padding:6px}.gl div{padding:16px 18px;border-left:1px solid #8b5cf633}.gl div:first-child{border:0}.gl dt{font-size:12px;color:var(--c)}.gl dd{margin:4px 0 0;font-size:14px;color:#c3c8de}@media(max-width:860px){.gl{grid-template-columns:1fr 1fr}.gl div:nth-child(3){border:0}}
+.pipe{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}.pipe span{padding:6px 12px;border-radius:99px;font-size:12px;border:1px solid #8b5cf655;color:var(--mu);transition:all .3s}.pipe span.on{border-color:var(--c);color:var(--c);background:#22d3ee1a}.pipe span.warn.on{border-color:#fbbf24;color:#fbbf24;background:#fbbf2418}
+.qf{display:flex;gap:10px;flex-wrap:wrap}.qf input,#pin{flex:1;min-width:220px;min-height:46px;padding:0 16px;border-radius:12px;border:1px solid #8b5cf666;background:#050510;color:var(--tx);font:inherit}
+.ans{font-size:17px;margin:14px 0 8px}.ev{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}.ev li{font-size:14px;color:#c3c8de;background:#ffffff0a;border-radius:10px;padding:10px 12px}.ev i{display:block;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--v),var(--c));margin-bottom:6px}.ev b{color:var(--c);font-weight:400}
+#pal{position:fixed;inset:0;z-index:50;background:#050510d9;backdrop-filter:blur(6px);display:flex;justify-content:center;padding-top:15vh}#pal[hidden]{display:none}.pbx{width:min(560px,92vw);height:fit-content;padding:12px}#pls{list-style:none;margin:10px 0 0;padding:0}#pls li{padding:12px 14px;border-radius:10px;cursor:pointer}#pls li[aria-selected=true]{background:#8b5cf633;color:#fff}
+.av{position:absolute;top:84px;left:24px;z-index:5;width:132px;height:132px;padding:0;border:0;background:none;border-radius:50%;cursor:pointer;perspective:500px}
+.av::before{content:"";position:absolute;inset:-4px;border-radius:50%;background:conic-gradient(var(--v),var(--c),var(--v));animation:spn 6s linear infinite}
+.av img{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;border:4px solid var(--bg);display:block;transition:transform .15s}
+@keyframes spn{to{transform:rotate(1turn)}}
+.acard{position:absolute;top:226px;left:24px;z-index:6;width:min(300px,calc(100vw - 48px));padding:18px}.acard[hidden]{display:none}
+#toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);z-index:60;background:#0b1024;border:1px solid var(--c);color:var(--tx);padding:10px 18px;border-radius:99px;font-size:14px;opacity:0;pointer-events:none;transition:all .3s}#toast.on{opacity:1;transform:translate(-50%,0)}
+.hw{padding-top:240px}
+.chip{display:inline-flex;align-items:center;gap:10px;margin-top:20px;min-height:40px;padding:0 16px;border-radius:99px;border:1px solid #22d3ee66;background:#22d3ee14;color:var(--c);font-size:13px;text-decoration:none}.chip i{width:8px;height:8px;border-radius:50%;background:var(--c);animation:pl 1.8s ease-in-out infinite}
+@keyframes pl{50%{transform:scale(1.6);opacity:.5}}
+.eraa{display:grid;grid-template-columns:minmax(280px,1.15fr) 1fr;gap:32px;align-items:center;padding:32px}.orb{width:200px;max-width:100%;transition:filter .3s}.eraa:hover .orb{filter:drop-shadow(0 0 18px #8b5cf6aa)}.orb .rg{fill:none;stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:spn 16s linear infinite}.orb .rg.b{animation-duration:24s;animation-direction:reverse}.orb .co{transform-box:fill-box;transform-origin:center;animation:pl 3s ease-in-out infinite}
+@media(max-width:760px){.eraa{grid-template-columns:1fr;padding:24px}.orb{width:140px}.av{width:88px;height:88px;top:78px;left:18px}.acard{top:176px;left:18px}.hw{padding-top:180px}}
+@media(prefers-reduced-motion:reduce){.chip i,.orb .rg,.orb .co{animation:none}}
+@media(prefers-reduced-motion:reduce){.av::before{animation:none}}
+#cv3{width:100%;height:400px;display:block;touch-action:pan-y;cursor:grab;border-radius:16px}.eraav{position:relative}@media(max-width:760px){#cv3{height:300px}}
+.eraal{position:absolute;left:50%;top:calc(50% - 14px);transform:translate(-50%,-50%);font-size:14px;letter-spacing:.3em;color:#fff;pointer-events:none;text-shadow:0 0 16px #22d3ee}
+#bg3{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.55}main{position:relative;z-index:1}
+.pj{transition:transform .15s ease-out}
+#sph{position:relative;height:400px;margin-top:26px;touch-action:pan-y;cursor:grab;overflow:hidden}
+.sw{position:absolute;left:50%;top:50%;white-space:nowrap;font-size:13px;padding:5px 12px;border-radius:99px;border:1px solid #8b5cf688;background:#0b1024e6;color:var(--tx);will-change:transform,opacity}.sw:hover{background:#22d3ee33;color:#fff}
+@media(max-width:760px){#sph{height:340px}}
+#pt{display:block;width:100%;height:340px;touch-action:pan-y;cursor:crosshair}@media(max-width:760px){#pt{height:240px}}
+.nn{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;padding:20px;margin-top:26px;align-items:center}@media(max-width:860px){.nn{grid-template-columns:1fr}}
+#cv4{width:100%;height:380px;display:block;touch-action:pan-y;cursor:grab;border-radius:14px}@media(max-width:760px){#cv4{height:300px}}
+.nnc label{display:block;font-size:13px;margin:0 0 14px;color:var(--mu)}.nnc input[type=range]{width:100%;accent-color:#8B5CF6;height:32px}.nnc .b{margin:4px 0 18px;cursor:pointer;color:var(--tx);font-family:inherit}
+.ob{height:8px;border-radius:8px;background:#ffffff14;margin:4px 0 12px;position:relative;overflow:hidden}.ob i{position:absolute;top:0;bottom:0;left:50%;background:var(--c)}
+</style>
+</head>
+<body>
+<header><nav aria-label="Primary">
+<a href="#hero" style="text-decoration:none;font:600 18px 'Space Grotesk',sans-serif">Anurag<span style="color:var(--c)">.ai</span></a>
+<button id="mb" aria-expanded="false" aria-controls="nl" aria-label="Open menu">&#9776;</button>
+<ul id="nl"><li><a href="#hero">Home</a></li><li><a href="#about">About</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></header>
+<main>
+<section id="hero" aria-labelledby="h1"><canvas id="cv" aria-hidden="true"></canvas>
+<button id="av" class="av" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="card" aria-label="Open profile card"><img src="data:image/jpeg;base64,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" width="128" height="128" alt="Portrait of Anurag Kumar Vishwakarma wearing a black suit and sunglasses"></button>
+<div id="card" class="g acard" hidden role="dialog" aria-label="Profile card"><p style="margin:0;font:600 18px 'Space Grotesk',sans-serif">Anurag Kumar Vishwakarma</p><p class="mono" style="margin:2px 0 12px;color:var(--c);font-size:13px">AI/ML Engineer, Mohali, Punjab</p><div class="btns" style="margin:0"><a class="b s" href="#contact">Contact</a><button class="b" id="cm" type="button">Copy email</button></div></div>
+<div class="hw"><p class="eb mono">Hello, I&rsquo;m Anurag</p>
+<h1 id="h1">Building Intelligence.<br>Engineering the Future.</h1>
+<p class="role mono" id="role" aria-hidden="true">AI/ML Engineer</p>
+<p class="sr" style="position:absolute;left:-9999px">AI/ML Engineer, Generative AI Developer, Agentic AI Engineer, LLM &amp; RAG Developer</p>
+<p class="sub">I build intelligent AI systems that reason, retrieve knowledge, automate workflows, and transform complex problems into practical solutions.</p>
+<a class="chip mono" href="#eraa"><i aria-hidden="true"></i>Now building: ERAA, a super AI intelligent system</a>
+<div class="btns"><a class="b s" href="#projects">Explore My Work</a><a class="b" href="resume.pdf" download id="rs1">Download Resume</a><a class="b" href="#contact">Let&rsquo;s Connect</a></div></div></section>
+
+<section id="play" aria-labelledby="plh" style="padding-bottom:40px"><h2 id="plh">Play with it</h2><p class="k">Move your cursor or finger through the particles, then pick a word to watch them reshape.</p><div class="g" style="margin-top:26px;overflow:hidden"><canvas id="pt" role="img" aria-label="Interactive particle display that spells ANURAG, GEN AI, AGENTS and ERAA. Particles scatter away from the cursor and reform."></canvas></div><div class="tabs" id="pw" role="group" aria-label="Choose a word"></div></section>
+<section id="glance" aria-label="At a glance"><dl class="g gl"><div><dt class="mono">Focus</dt><dd>Generative AI, LLMs, RAG, agentic systems</dd></div><div><dt class="mono">Latest role</dt><dd>AI/ML Engineer Intern, Ansh Infotech (Jan–Jun 2026)</dd></div><div><dt class="mono">Core stack</dt><dd>Python, LangGraph, Pinecone, FastAPI, Docker</dd></div><div><dt class="mono">Based in</dt><dd>Mohali, Punjab, India</dd></div></dl><p class="cp" style="text-align:center">Tip: press Ctrl/⌘ + K to jump anywhere, or try the retrieval demo below.</p></section>
+<section id="about" aria-labelledby="ah"><h2 id="ah">Engineer profile</h2>
+<div class="ab"><div><p>I&rsquo;m Anurag Kumar Vishwakarma, an AI/ML Engineer focused on building practical Generative AI applications, intelligent agents, Retrieval-Augmented Generation systems, and AI-powered automation platforms.</p><p>My experience includes developing end-to-end AI applications, working with language models, building backend APIs, implementing vector search, and deploying containerized solutions.</p><p>I enjoy turning emerging AI capabilities into reliable applications that solve meaningful real-world problems.</p><p class="mono" style="color:var(--c);font-size:14px">Mohali, Punjab, India</p></div>
+<div><ul class="st"><li class="g"><b>3</b><span>End-to-End AI Projects</span></li><li class="g"><b>4</b><span>LLM API Ecosystems</span></li><li class="g"><b>3</b><span>Vector Search Technologies</span></li><li class="g"><b>AI</b><span>Engineering &amp; LLM Evaluation experience</span></li></ul>
+<p class="cp" style="margin-top:22px">Counts describe the breadth of my portfolio work, not production-scale usage.</p></div></div></section>
+
+<section id="expertise" aria-labelledby="eh"><h2 id="eh">Expertise</h2><p class="k">Choose a category to filter. Hover or focus a skill to see where it belongs.</p>
+<div class="tabs" id="tabs" role="group" aria-label="Filter skills by category"></div><div id="sph" aria-hidden="true"></div><p class="cp" style="text-align:center">Drag the sphere to rotate it. Every skill is also listed in plain text below.</p><ul id="sk"></ul></section>
+
+<section id="projects" aria-labelledby="ph"><h2 id="ph">Featured projects</h2><p class="k">Three end-to-end AI systems. The diagrams are interactive simulations that explain the architecture; they are not live demos.</p><div id="pjs"></div></section>
+
+<section id="eraa" aria-labelledby="eh2"><div class="g eraa"><div class="eraav"><canvas id="cv3" tabindex="0" role="img" aria-label="Interactive 3D concept visual of ERAA: a glowing core with orbiting rings. Drag to rotate, click or press Enter to send a pulse."></canvas><span class="eraal mono" aria-hidden="true">ERAA</span><p class="cp" style="text-align:center">Concept visual, not a live system. Drag to rotate, click to send a pulse.</p></div><div><p class="mono eb">Currently building</p><h2 id="eh2" style="font-size:clamp(30px,5vw,46px);margin-top:6px">ERAA: a super AI intelligent system</h2><p class="k">A personal project I am working on myself. ERAA is still in development, so I am sharing it as work in progress rather than a finished product. More details, architecture notes and visuals will appear here as it takes shape.</p><ul class="tg mono"><li>In development</li><li>Personal project</li></ul></div></div></section>
+<section id="adk" aria-labelledby="adh" style="padding-top:20px;padding-bottom:20px"><div class="g" style="padding:26px 28px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between"><div style="max-width:640px"><p class="mono eb">Learning and building</p><h2 id="adh" style="font-size:clamp(24px,4vw,34px);margin-top:6px">Google ADK (Agent Development Kit)</h2><p class="k" style="margin-top:8px">I am learning Google ADK and building projects with it, alongside LangGraph and LangChain. Project details will be added here once they are ready to share.</p></div><ul class="tg mono" style="margin:0"><li>Learning</li><li>Building projects</li></ul></div></section>
+<section id="nn" aria-labelledby="nnh"><h2 id="nnh">Inside a neural network</h2><p class="k">A small network running live in your browser: three inputs, random weights and real forward-pass math. Move a slider to send a signal through the layers, or drag the scene to look around. It is an illustration, not a trained model and not one of my projects.</p>
+<div class="g nn"><div><canvas id="cv4" role="img" aria-label="Interactive 3D neural network with layers of 3, 6, 6, 4 and 2 neurons. Drag to rotate."></canvas><p class="cp" style="text-align:center">Layers: 3, 6, 6, 4, 2 neurons. Cyan is positive, violet is negative.</p></div><div class="nnc"><div id="nns"></div><button class="b" id="nnr" type="button">Randomize weights</button><div id="nno" class="mono" aria-live="polite"></div></div></div></section>
+<section id="ask" aria-labelledby="qh"><h2 id="qh">Ask my portfolio</h2><p class="k">A working retrieval demo that runs in your browser over facts from my own CV: TF-IDF vector search, an evidence grader and an insufficient-evidence fallback, the same pattern as my Agentic RAG project. It retrieves and quotes; no LLM is involved, and the web-search fallback is only simulated.</p>
+<div class="g" style="padding:22px;margin-top:28px"><div class="pipe mono" id="pipe"><span>1 Router</span><span>2 Vector retrieval</span><span>3 Evidence grader</span><span id="pend">4 Response</span></div>
+<form id="qf" class="qf"><input id="qi" aria-label="Ask a question about Anurag" placeholder="e.g. What vector databases has he used?" autocomplete="off"><button class="b s" type="submit">Retrieve</button></form>
+<div class="tabs" id="qs"></div><div id="qo" aria-live="polite"></div></div></section>
+<section id="experience" aria-labelledby="xh"><h2 id="xh">Experience</h2>
+<ol class="tl">
+<li><div class="g"><p class="mono eb">January 2026 – June 2026</p><h3>AI/ML Engineer Intern</h3><p style="margin:0;color:var(--mu)">Ansh Infotech</p><ul><li>Contributed to an M.Tech research project involving machine learning, deep learning, and computer vision.</li><li>Enhanced LLM agents and RAG pipelines using Pinecone and ChromaDB retrieval.</li><li>Worked on improving grounded responses and reducing inaccurate outputs.</li><li>Containerized applications using Docker.</li><li>Built GitHub-based CI/CD workflows.</li></ul></div></li>
+<li><div class="g"><p class="mono eb">2024 – 2025</p><h3>Prompt Engineer — LLM Evaluation &amp; RLHF</h3><p style="margin:0;color:var(--mu)">Outlier.ai</p><ul><li>Evaluated and ranked LLM responses.</li><li>Assessed helpfulness, quality, and correctness.</li><li>Refined prompts to improve answer quality.</li><li>Fact-checked LLM outputs to identify hallucinations.</li></ul></div></li></ol>
+<h3 style="font-size:26px;margin-top:50px">Education &amp; certifications</h3>
+<div class="ed"><div class="g"><p class="mono eb">August 2022 – August 2026</p><h3 style="font-size:19px">Bachelor of Technology — Computer Science Engineering</h3><p style="margin:4px 0;color:var(--mu)">Gulzar Group of Institutes, Ludhiana</p><p style="margin:6px 0 0">CGPA: 7.5 / 10</p></div>
+<div class="g"><p style="margin:0 0 8px">C++ Programming Training — RCPL (IIT Kanpur)</p><p style="margin:0">LeetCode Star Badge</p></div></div></section>
+
+<section id="contact" aria-labelledby="ch"><canvas id="cv2" aria-hidden="true"></canvas>
+<div class="in"><h2 id="ch" style="font-size:clamp(34px,6vw,58px)">Have an AI Challenge?<br>Let&rsquo;s Build Something Intelligent.</h2>
+<p class="k" style="margin:18px auto">I&rsquo;m interested in AI/ML engineering opportunities, Generative AI applications, intelligent agents, and impactful engineering collaborations.</p>
+<p><button type="button" id="cm2" class="mono" style="background:none;border:0;color:var(--c);font-size:16px;cursor:pointer;text-decoration:underline dotted;min-height:44px" aria-label="Copy email address">anuragncc@gmail.com</button></p>
+<div class="btns"><a class="b s" href="mailto:anuragncc@gmail.com">Send Email</a><a class="b" href="resume.pdf" download id="rs2">Download Resume</a></div>
+<p class="cp">Add your resume.pdf next to this file to enable the Download Resume buttons.</p></div>
+<footer>&copy; 2026 Anurag Kumar Vishwakarma. Built with curiosity, code, and intelligence.</footer></section>
+</main>
+<div id="pal" hidden role="dialog" aria-modal="true" aria-label="Command menu"><div class="g pbx"><input id="pin" aria-label="Search sections" placeholder="Jump to…" autocomplete="off"><ul id="pls" role="listbox"></ul></div></div>
+<div id="toast" role="status"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+$("#mb").onclick=function(){var o=$("#nl").classList.toggle("open");this.setAttribute("aria-expanded",o)};
+document.querySelectorAll("#nl a").forEach(function(a){a.onclick=function(){$("#nl").classList.remove("open")}});
+
+var roles=["AI/ML Engineer","Generative AI Developer","Agentic AI Engineer","LLM & RAG Developer"],ri=0;
+if(!rm)setInterval(function(){ri=(ri+1)%roles.length;$("#role").textContent=roles[ri]},2400);
+var secs=[].slice.call(document.querySelectorAll("section")),links=document.querySelectorAll("#nl a");
+new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")=="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"}).observe&&secs.forEach(function(s){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")=="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"}).observe(s)});
+/* skills */
+var SK=[["Generative AI","Large Language Models,Prompt Engineering,Agentic RAG,LangGraph,LangChain,LLM Evaluation,Hugging Face,Claude,OpenAI GPT-4,Gemini,Groq,Google ADK"],["Vector Search","Pinecone,ChromaDB,FAISS,Embeddings,Semantic Search"],["Machine Learning","PyTorch,TensorFlow,Scikit-learn,NLP,Computer Vision,OpenCV"],["Backend & MLOps","FastAPI,Flask,Docker,CI/CD,AWS,n8n"],["Programming & Data","Python,SQL,C++,NumPy,Pandas,Git/GitHub"]];
+function drawSk(c){$("#sk").innerHTML=SK.filter(function(g){return c=="All"||g[0]==c}).map(function(g){return g[1].split(",").map(function(n){return '<li class="g mono" tabindex="0" title="'+n+" — "+g[0]+'">'+n+"<small>"+g[0]+"</small></li>"}).join("")}).join("")}
+$("#tabs").innerHTML=["All"].concat(SK.map(function(g){return g[0]})).map(function(t,i){return '<button aria-pressed="'+(i==0)+'">'+t+"</button>"}).join("");
+$("#tabs").onclick=function(e){if(e.target.tagName!="BUTTON")return;this.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b==e.target)});drawSk(e.target.textContent)};drawSk("All");
+/* projects */
+function N(id,l,x,y,d){return{id:id,l:l,x:x,y:y,d:d}}
+var P=[{t:"Enterprise IT Support Agentic RAG Copilot",i:"An intelligent Agentic RAG copilot that routes user queries, retrieves information from a private knowledge base, evaluates evidence quality, and falls back to web search when internal knowledge is insufficient.",s:"LangGraph,Pinecone,Groq,Tavily,FastAPI,Docker",h:"LangGraph-based agent orchestration,Intelligent query routing,Pinecone vector retrieval,Evidence grading and query rewriting,Tavily web-search fallback,FastAPI backend,Admin-protected document ingestion,Hugging Face embeddings,SQLite audit logging,Docker deployment",
+cap:"Simulated agentic RAG flow. Illustrative only: no live backend calls happen here.",
+n:[N("q","User Query",65,50,"The question enters the graph."),N("r","Router",195,50,"Decides whether the question needs the private knowledge base."),N("p","Pinecone Retrieval",325,50,"Embeds the query and fetches the closest knowledge-base chunks."),N("g","Evidence Grader",455,50,"Judges whether retrieved evidence is good enough to answer."),N("a","Response",580,50,"Generates the final grounded answer."),N("w","Query Rewriter",455,170,"If evidence is insufficient, reformulates the query for a better search."),N("t","Tavily Search",325,170,"Web-search fallback when internal knowledge is not enough.")],e:"q-r,r-p,p-g,g-a,g-w,w-t,t-a"},
+{t:"AI Face Recognition Employee Management & Analytics Platform",i:"An AI-powered employee management platform featuring face detection, identity verification, vector similarity search, and analytics.",s:"FastAPI,React,InsightFace,PostgreSQL,Docker",h:"RetinaFace face detection,ArcFace 512-dimensional embeddings,Camera/video-based enrollment,Image quality gating,HNSW vector indexing,Cosine similarity matching,Asynchronous background workers,PostgreSQL analytics dashboard,Docker Compose deployment",face:1,
+cap:"Simulated identity-matching pipeline. No real biometric data is shown and no accuracy is claimed.",
+n:[N("c","Camera Capture",65,50,"Camera or video frames used for enrollment and verification."),N("d","RetinaFace",195,50,"Detects faces and landmarks in each frame."),N("u","Quality Gate",325,50,"Rejects blurry, dark or badly posed images before they reach the index."),N("e","ArcFace 512-d",455,50,"Turns an aligned face into a 512-dimensional embedding."),N("h","HNSW Search",580,50,"Approximate nearest-neighbour search over stored embeddings."),N("m","Cosine Match",580,170,"Compares similarity of the nearest candidates against a threshold."),N("n","Analytics",440,170,"Match events feed the PostgreSQL-backed analytics dashboard.")],e:"c-d,d-u,u-e,e-h,h-m,m-n"},
+{t:"Generative AI Assistant & Automation Platform",i:"A modular generative AI assistant that combines intelligent task planning, contextual memory, speech interaction, NLP capabilities, and workflow automation.",s:"Python,LangChain,n8n",h:"Modular AI assistant architecture,Pluggable task planning,Contextual memory,Speech-based interaction,NLP reasoning,Text summarization,n8n workflow integration,Third-party API automation",
+cap:"Simulated automation network. Illustrative only: no workflow is executed here.",
+n:[N("h","AI Assistant",320,130,"Central orchestrator that plans tasks and calls modules."),N("p","Task Planner",100,50,"Pluggable planning step that breaks a request into actions."),N("m","Memory",100,210,"Keeps conversational context between turns."),N("s","Speech I/O",320,30,"Speech-based interaction in and out."),N("l","NLP / Summaries",540,50,"NLP reasoning and text summarization."),N("w","n8n Workflow",540,210,"Triggers n8n workflows for automation."),N("a","Third-party APIs",320,225,"External services reached through workflows.")],e:"h-p,h-m,h-s,h-l,h-w,w-a"}];
+var FP=[[60,40],[100,30],[140,40],[45,80],[155,80],[75,70],[125,70],[100,95],[80,125],[100,132],[120,125],[60,150],[100,170],[140,150]];
+function face(){var s='<svg viewBox="0 0 200 190" role="img" aria-label="Abstract facial landmark points joined by vector lines" style="height:150px;margin:0 auto 10px">';FP.forEach(function(p,i){FP.slice(i+1,i+4).forEach(function(q){s+='<line x1="'+p[0]+'" y1="'+p[1]+'" x2="'+q[0]+'" y2="'+q[1]+'" stroke="#8B5CF6" stroke-opacity=".5"/>'})});FP.forEach(function(p){s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="3" fill="#22D3EE"/>'});return s+"</svg>"}
+function li(s){return s.split(",").map(function(x){return"<li>"+x+"</li>"}).join("")}
+$("#pjs").innerHTML=P.map(function(p,k){var by={};p.n.forEach(function(n){by[n.id]=n});
+var ed=p.e.split(",").map(function(x){var a=x.split("-");return'<line class="fl" x1="'+by[a[0]].x+'" y1="'+by[a[0]].y+'" x2="'+by[a[1]].x+'" y2="'+by[a[1]].y+'" stroke="#22D3EE" stroke-opacity=".7" stroke-width="1.5"/>'+(rm?"":'<circle r="3" fill="#22D3EE"><animateMotion dur="2.4s" repeatCount="indefinite" path="M'+by[a[0]].x+" "+by[a[0]].y+" L"+by[a[1]].x+" "+by[a[1]].y+'"/></circle>')}).join("");
+var nd=p.n.map(function(n,i){return'<g role="button" tabindex="0" data-k="'+k+'" data-i="'+i+'" aria-label="'+n.l+": "+n.d+'"><rect x="'+(n.x-56)+'" y="'+(n.y-18)+'" width="112" height="36" rx="10" fill="#0b1024" stroke="'+(i?"#8B5CF6":"#22D3EE")+'" stroke-width="'+(i?1:2)+'"/><text x="'+n.x+'" y="'+(n.y+4)+'" text-anchor="middle" fill="#e6e8f5" font-size="10.5" font-family="JetBrains Mono,monospace">'+n.l+"</text></g>"}).join("");
+return'<article class="g pj" aria-label="'+p.t+'"><div><h3>'+p.t+"</h3><p>"+p.i+'</p><ul class="tg mono">'+li(p.s)+'</ul><h4 style="margin:18px 0 0;font:500 14px \'Space Grotesk\'">Technical highlights</h4><ul class="hl">'+li(p.h)+'</ul></div><div class="vz">'+(p.face?face():"")+'<svg viewBox="0 0 640 260" role="group" aria-label="'+p.t+' diagram">'+ed+nd+'</svg><p class="dt" id="d'+k+'" aria-live="polite"><b style="color:var(--c)">'+p.n[0].l+":</b> "+p.n[0].d+'</p><p class="cp">'+p.cap+"</p></div></article>"}).join("");
+function pick(g){var k=g.dataset.k,n=P[k].n[g.dataset.i];$("#d"+k).innerHTML='<b style="color:var(--c)">'+n.l+":</b> "+n.d;g.parentNode.querySelectorAll("rect").forEach(function(r){r.setAttribute("stroke","#8B5CF6");r.setAttribute("stroke-width",1)});var r=g.querySelector("rect");r.setAttribute("stroke","#22D3EE");r.setAttribute("stroke-width",2)}
+$("#pjs").addEventListener("click",function(e){var g=e.target.closest("g[role=button]");if(g)pick(g)});
+$("#pjs").addEventListener("keydown",function(e){var g=e.target.closest&&e.target.closest("g[role=button]");if(g&&(e.key=="Enter"||e.key==" ")){e.preventDefault();pick(g)}});
+/* 3D core */
+function core(cv,cnt,wide){if(!window.THREE)return;var r;try{r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true})}catch(x){return}
+r.setPixelRatio(Math.min(devicePixelRatio,1.5));var sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(50,1,.1,50);cam.position.z=5.2;var g=new THREE.Group();sc.add(g);
+var pts=[],ga=Math.PI*(3-Math.sqrt(5)),i,j;for(i=0;i<cnt;i++){var y=1-i/(cnt-1)*2,q=Math.sqrt(1-y*y);pts.push(new THREE.Vector3(Math.cos(ga*i)*q,y,Math.sin(ga*i)*q).multiplyScalar(1.6))}
+var lp=[],th=cnt>100?.8:1;for(i=0;i<cnt;i++)for(j=i+1;j<cnt;j++)if(pts[i].distanceTo(pts[j])<th)lp.push(pts[i],pts[j]);
+g.add(new THREE.Points(new THREE.BufferGeometry().setFromPoints(pts),new THREE.PointsMaterial({color:0x22D3EE,size:.06})));
+g.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(lp),new THREE.LineBasicMaterial({color:0x8B5CF6,transparent:true,opacity:.35})));
+g.add(new THREE.Mesh(new THREE.IcosahedronGeometry(1.05,1),new THREE.MeshBasicMaterial({color:0x8B5CF6,wireframe:true,transparent:true,opacity:.28})));
+var pu=new THREE.Mesh(new THREE.SphereGeometry(1,24,24),new THREE.MeshBasicMaterial({color:0x22D3EE,transparent:true,opacity:.2}));g.add(pu);
+var ring=new THREE.Mesh(new THREE.TorusGeometry(2.05,.008,8,120),new THREE.MeshBasicMaterial({color:0x22D3EE,transparent:true,opacity:.6}));ring.rotation.x=1.3;g.add(ring);
+var mx=0,my=0;addEventListener("pointermove",function(e){mx=e.clientX/innerWidth*2-1;my=e.clientY/innerHeight*2-1});
+function rs(){var w=cv.clientWidth,h=cv.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}rs();addEventListener("resize",rs);
+var vis=true;new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(cv);var t0=0;
+(function loop(t){requestAnimationFrame(loop);if(!vis)return;var s=t/1000;if(!rm){g.rotation.y=s*.15;g.rotation.x+=(my*.4-g.rotation.x)*.05;g.position.x+=(mx*.25-g.position.x)*.05;g.position.y=Math.sin(s)*.12;pu.scale.setScalar(.55+Math.sin(s*1.6)*.06)}r.render(sc,cam)})(0)}
+core($("#cv"),innerWidth<768?70:140);core($("#cv2"),60);
+/* progress, reveals, spotlight */
+var bar=document.createElement("div");bar.id="pb";document.body.appendChild(bar);
+addEventListener("scroll",function(){var h=document.documentElement;bar.style.transform="scaleX("+scrollY/((h.scrollHeight-innerHeight)||1)+")"},{passive:true});
+if(!rm){var rv=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");rv.unobserve(e.target)}})},{threshold:.06});secs.forEach(function(s){if(s.id!="hero"&&s.id!="contact"){s.classList.add("rv");rv.observe(s)}})}
+$("#pjs").addEventListener("pointermove",function(e){var c=e.target.closest(".pj");if(!c)return;var b=c.getBoundingClientRect();c.style.setProperty("--mx",e.clientX-b.left+"px");c.style.setProperty("--my",e.clientY-b.top+"px")});
+/* retrieval demo: TF-IDF over CV facts */
+var DOCS=["AI/ML Engineer Intern at Ansh Infotech, January 2026 to June 2026. Contributed to an M.Tech research project involving machine learning, deep learning and computer vision.","Enhanced LLM agents and RAG pipelines using Pinecone and ChromaDB retrieval. Worked on improving grounded responses and reducing inaccurate outputs.","Containerized applications using Docker and built GitHub-based CI/CD workflows.","Prompt Engineer for LLM evaluation and RLHF at Outlier.ai, 2024 to 2025. Evaluated and ranked LLM responses, assessed helpfulness, quality and correctness, refined prompts and fact-checked outputs to identify hallucinations.","Enterprise IT Support Agentic RAG Copilot, built with LangGraph, Pinecone, Groq, Tavily, FastAPI and Docker. It routes queries, retrieves from a private knowledge base, grades evidence, rewrites queries and falls back to Tavily web search. Includes admin-protected ingestion, Hugging Face embeddings and SQLite audit logging.","AI Face Recognition Employee Management and Analytics Platform, built with FastAPI, React, InsightFace, PostgreSQL and Docker. RetinaFace detection, ArcFace 512-dimensional embeddings, image quality gating, HNSW indexing, cosine similarity matching, background workers and an analytics dashboard.","Generative AI Assistant and Automation Platform, built with Python, LangChain and n8n: pluggable task planning, contextual memory, speech interaction, NLP reasoning, text summarization and workflow automation through third-party APIs.","Skills: large language models, prompt engineering, agentic RAG, LangGraph, LangChain, LLM evaluation, Hugging Face, Claude, OpenAI GPT-4, Gemini and Groq. Vector search with Pinecone, ChromaDB, FAISS, embeddings and semantic search. Machine learning with PyTorch, TensorFlow, Scikit-learn, NLP, computer vision and OpenCV.","Backend and MLOps: FastAPI, Flask, Docker, CI/CD, AWS and n8n. Programming and data: Python, SQL, C++, NumPy, Pandas and Git/GitHub.","Education: B.Tech in Computer Science Engineering at Gulzar Group of Institutes, Ludhiana, August 2022 to August 2026, CGPA 7.5 out of 10. Certifications: C++ Programming Training from RCPL (IIT Kanpur) and a LeetCode Star Badge.","Based in Mohali, Punjab, India. Interested in AI/ML engineering opportunities, Generative AI applications and intelligent agents. Email anuragncc@gmail.com.","Currently building ERAA, a personal project: a super AI intelligent system. It is a work in progress, with details to be shared as it develops.","Learning Google ADK (Agent Development Kit) and building projects with it, alongside LangGraph and LangChain for agentic AI."];
+var SW="a an the of and or to in for is are was were what which who how does do did has have he his with on at by from about me my tell can it that this as be used use".split(" ");
+function tok(s){return s.toLowerCase().replace(/[^a-z0-9+#\s]/g," ").split(/\s+/).filter(function(w){return w&&SW.indexOf(w)<0}).map(function(w){return w.length>3?w.replace(/s$/,""):w})}
+var T=DOCS.map(tok),df={};T.forEach(function(t){t.filter(function(w,i){return t.indexOf(w)==i}).forEach(function(w){df[w]=(df[w]||0)+1})});
+function vec(t){var v={},n=0,w;t.forEach(function(x){v[x]=(v[x]||0)+1});for(w in v){v[w]*=Math.log(1+DOCS.length/(df[w]||.5));n+=v[w]*v[w]}n=Math.sqrt(n)||1;for(w in v)v[w]/=n;return v}
+function sim(a,b){var s=0;for(var w in a)if(b[w])s+=a[w]*b[w];return s}
+var DV=T.map(vec),pills=document.querySelectorAll("#pipe span");
+function ask(q){if(!q.trim())return;var qv=vec(tok(q)),r=DV.map(function(d,i){return{i:i,s:sim(qv,d)}}).sort(function(a,b){return b.s-a.s}).slice(0,3),ok=r[0].s>=.08;
+pills.forEach(function(p){p.className=""});$("#pend").textContent=ok?"4 Response":"4 Rewrite + web search (simulated)";
+pills.forEach(function(p,i){setTimeout(function(){p.className="on"+(i==3&&!ok?" warn":"")},rm?0:i*320)});
+var h="<p class=\"mono\" style=\"font-size:13px;margin:16px 0 0;color:"+(ok?"var(--c)":"#fbbf24")+"\">Evidence grader: "+(ok?"sufficient (top similarity ":"insufficient (top similarity ")+r[0].s.toFixed(2)+")"+(ok?"":", so the agent would rewrite the query and search the web. Not run in this demo.")+"</p>";
+if(ok)h+="<p class=\"ans\">"+DOCS[r[0].i]+"</p>";
+h+="<ul class=\"ev\">"+r.filter(function(x){return x.s>0}).map(function(x){return"<li><i style=\"width:"+Math.min(100,x.s*250)+"%\"></i><b class=\"mono\">similarity "+x.s.toFixed(2)+"</b> "+DOCS[x.i]+"</li>"}).join("")+"</ul>";
+$("#qo").innerHTML=h}
+$("#qs").innerHTML=["What vector databases has he used?","Tell me about his RAG project","Does he know Docker?","What is he building now?","Does he know Google ADK?","What is the weather today?"].map(function(q){return"<button type=\"button\">"+q+"</button>"}).join("");
+$("#qs").onclick=function(e){if(e.target.tagName=="BUTTON"){$("#qi").value=e.target.textContent;ask(e.target.textContent)}};
+$("#qf").onsubmit=function(e){e.preventDefault();ask($("#qi").value)};
+/* command palette */
+var pal=$("#pal"),pin=$("#pin"),pls=$("#pls"),PI=[["Home","#hero"],["Particle playground","#play"],["About","#about"],["Expertise","#expertise"],["Projects","#projects"],["ERAA (in progress)","#eraa"],["Google ADK","#adk"],["Neural network lab","#nn"],["Ask my portfolio","#ask"],["Experience","#experience"],["Contact","#contact"],["Send email","mailto:anuragncc@gmail.com"]],sel=0,prev;
+function gf(){var q=pin.value.toLowerCase();return PI.filter(function(x){return x[0].toLowerCase().indexOf(q)>-1})}
+function pr(){var f=gf();sel=Math.max(0,Math.min(sel,f.length-1));pls.innerHTML=f.map(function(x,i){return"<li role=\"option\" aria-selected=\""+(i==sel)+"\" data-h=\""+x[1]+"\">"+x[0]+"</li>"}).join("")}
+function cl(){pal.hidden=true;if(prev)prev.focus()}
+function go(h){cl();if(h.indexOf("mailto")==0)location.href=h;else location.hash=h}
+function op(){prev=document.activeElement;pal.hidden=false;pin.value="";sel=0;pr();pin.focus()}
+pin.oninput=function(){sel=0;pr()};pls.onclick=function(e){if(e.target.dataset.h)go(e.target.dataset.h)};pal.onclick=function(e){if(e.target==pal)cl()};
+addEventListener("keydown",function(e){if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()=="k"){e.preventDefault();pal.hidden?op():cl();return}if(pal.hidden)return;var f=gf();if(e.key=="Escape")cl();else if(e.key=="ArrowDown"){e.preventDefault();sel=(sel+1)%f.length;pr()}else if(e.key=="ArrowUp"){e.preventDefault();sel=(sel-1+f.length)%f.length;pr()}else if(e.key=="Enter"&&f[sel]){e.preventDefault();go(f[sel][1])}});
+/* avatar, toast, magnetic, count-up */
+var av=$("#av"),ac=$("#card"),im=av.querySelector("img");
+function tc(m){ac.hidden=!m;av.setAttribute("aria-expanded",m)}
+av.onclick=function(){tc(ac.hidden)};
+document.addEventListener("click",function(e){if(!ac.hidden&&!ac.contains(e.target)&&!av.contains(e.target))tc(false)});
+addEventListener("keydown",function(e){if(e.key=="Escape"&&!ac.hidden){tc(false);av.focus()}});
+if(!rm)av.addEventListener("pointermove",function(e){var b=av.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;im.style.transform="rotateY("+x*24+"deg) rotateX("+(-y*24)+"deg) scale(1.06)"});
+av.addEventListener("pointerleave",function(){im.style.transform=""});
+var ts=$("#toast");function toast(m){ts.textContent=m;ts.classList.add("on");setTimeout(function(){ts.classList.remove("on")},1800)}
+function copyMail(){var m="anuragncc@gmail.com";(navigator.clipboard?navigator.clipboard.writeText(m):Promise.reject()).then(function(){toast("Email copied")},function(){toast(m)})}
+$("#cm").onclick=copyMail;$("#cm2").onclick=copyMail;
+if(!rm&&matchMedia("(hover:hover)").matches)document.querySelectorAll(".b").forEach(function(b){b.addEventListener("pointermove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+(e.clientX-r.left-r.width/2)*.2+"px,"+(e.clientY-r.top-r.height/2)*.3+"px)"});b.addEventListener("pointerleave",function(){b.style.transform=""})});
+var cu=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;cu.unobserve(e.target);var n=+e.target.textContent;if(!n||rm)return;var s=performance.now();(function f(t){var p=Math.min(1,(t-s)/900);e.target.textContent=Math.round(n*p);if(p<1)requestAnimationFrame(f)})(s)})});
+document.querySelectorAll(".st b").forEach(function(b){cu.observe(b)});
+(function(){var cv=$("#cv3");if(!cv||!window.THREE)return;var r,i;try{r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true})}catch(x){return}
+r.setPixelRatio(Math.min(devicePixelRatio,1.5));
+var sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,50);cam.position.set(0,0,8.5);
+var root=new THREE.Group();root.rotation.x=.15;sc.add(root);var U={t:{value:0},p:{value:0}};
+var core=new THREE.Mesh(new THREE.IcosahedronGeometry(.95,3),new THREE.ShaderMaterial({uniforms:U,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,
+vertexShader:"varying vec3 vN;varying vec3 vP;void main(){vN=normalize(normalMatrix*normal);vP=position;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}",
+fragmentShader:"varying vec3 vN;varying vec3 vP;uniform float t;uniform float p;void main(){float f=pow(1.-abs(dot(vN,vec3(0.,0.,1.))),2.2);float w=.5+.5*sin(vP.y*6.+t*2.);vec3 c=mix(vec3(.54,.36,.96),vec3(.13,.83,.93),f+.25*w);gl_FragColor=vec4(c*(.45+f*1.6+p),.35+f*.65);}"}));root.add(core);
+var wf=new THREE.Mesh(new THREE.IcosahedronGeometry(1.3,1),new THREE.MeshBasicMaterial({color:0x8B5CF6,wireframe:true,transparent:true,opacity:.3}));root.add(wf);
+var rings=[],cols=[0x22D3EE,0x8B5CF6,0x22D3EE];
+[[1.9,.4,0,.5],[2.4,1.2,.6,-.35],[2.9,.2,1.1,.25]].forEach(function(c,k){var g=new THREE.Group();g.rotation.set(c[1],c[2],0);g.add(new THREE.Mesh(new THREE.TorusGeometry(c[0],.012,8,160),new THREE.MeshBasicMaterial({color:cols[k],transparent:true,opacity:.7})));var s=new THREE.Mesh(new THREE.SphereGeometry(.09,16,16),new THREE.MeshBasicMaterial({color:0xffffff}));g.add(s);root.add(g);rings.push({s:s,R:c[0],v:c[3],a:k*2})});
+var n=innerWidth<768?260:700,pa=new Float32Array(n*3);for(i=0;i<n;i++){var u=Math.random()*2-1,th=Math.random()*6.283,rr=Math.sqrt(1-u*u),R=2.6+Math.random()*1.8;pa[i*3]=rr*Math.cos(th)*R;pa[i*3+1]=u*R;pa[i*3+2]=rr*Math.sin(th)*R}
+var pg=new THREE.BufferGeometry();pg.setAttribute("position",new THREE.BufferAttribute(pa,3));var pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0x9ae6f5,size:.035,transparent:true,opacity:.8,depthWrite:false}));sc.add(pts);
+var pu=[];function pulse(){var m=new THREE.Mesh(new THREE.TorusGeometry(1,.01,8,128),new THREE.MeshBasicMaterial({color:0x22D3EE,transparent:true,opacity:.9}));m.userData.s=0;sc.add(m);pu.push(m);U.p.value=1}
+var dr=false,lx=0,ly=0,vx=0,vy=0,mv=0,px=0;
+cv.addEventListener("pointerdown",function(e){dr=true;lx=e.clientX;ly=e.clientY;mv=0;cv.setPointerCapture(e.pointerId);cv.style.cursor="grabbing"});
+cv.addEventListener("pointermove",function(e){px=e.clientX/innerWidth*2-1;if(!dr)return;var dx=e.clientX-lx,dy=e.clientY-ly;mv+=Math.abs(dx)+Math.abs(dy);vx=dx*.008;vy=dy*.008;root.rotation.y+=vx;root.rotation.x+=vy;lx=e.clientX;ly=e.clientY});
+cv.addEventListener("pointerup",function(){dr=false;cv.style.cursor="grab";if(mv<6)pulse()});
+cv.addEventListener("keydown",function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();pulse()}});
+var vis=false;new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(cv);
+function rs(){var w=cv.clientWidth,h=cv.clientHeight;if(!w)return;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+new ResizeObserver(rs).observe(cv);rs();var t0=performance.now();
+(function loop(now){requestAnimationFrame(loop);if(!vis)return;var t=(now-t0)/1000,k=rm?0:1;U.t.value=t*k;U.p.value*=.94;
+if(!dr){root.rotation.y+=vx+.002*k;root.rotation.x+=vy+(.15-root.rotation.x)*.01;vx*=.94;vy*=.94}
+cam.position.x+=(px*.6*k-cam.position.x)*.04;cam.lookAt(0,0,0);
+wf.rotation.y=-t*.2*k;wf.rotation.x=t*.1*k;core.scale.setScalar(1+Math.sin(t*1.8)*.03*k+U.p.value*.15);
+rings.forEach(function(o){var a=o.a+t*o.v*k*2;o.s.position.set(Math.cos(a)*o.R,Math.sin(a)*o.R,0)});pts.rotation.y=t*.03*k;
+for(var j=pu.length-1;j>=0;j--){var m=pu[j];m.userData.s+=.02;m.scale.setScalar(1+m.userData.s*3);m.material.opacity=Math.max(0,.9-m.userData.s*.9);m.lookAt(cam.position);if(m.userData.s>=1){sc.remove(m);m.geometry.dispose();m.material.dispose();pu.splice(j,1)}}
+r.render(sc,cam)})(t0)})();
+/* 3D skill sphere */
+(function(){var box=$("#sph");if(!box)return;var items=[],cols=["#22D3EE","#8B5CF6","#34d399","#fbbf24","#f472b6"],ga=Math.PI*(3-Math.sqrt(5));
+SK.forEach(function(g,gi){g[1].split(",").forEach(function(n){items.push({n:n,c:g[0],gi:gi})})});var N=items.length;
+items.forEach(function(it,i){var y=1-i/(N-1)*2,q=Math.sqrt(1-y*y);it.x=Math.cos(ga*i)*q;it.y=y;it.z=Math.sin(ga*i)*q;var e=document.createElement("span");e.className="sw mono";e.textContent=it.n;e.title=it.n+" \u2014 "+it.c;e.style.borderColor=cols[it.gi]+"99";it.e=e;box.appendChild(e)});
+var cat="All",ax=.3,ay=0,vx=0,vy=0,dr=false,hv=false,lx=0,ly=0,vis=false;
+$("#tabs").addEventListener("click",function(e){if(e.target.tagName=="BUTTON")cat=e.target.textContent});
+box.addEventListener("pointerdown",function(e){dr=true;lx=e.clientX;ly=e.clientY;box.setPointerCapture(e.pointerId);box.style.cursor="grabbing"});
+box.addEventListener("pointermove",function(e){if(!dr)return;vy=(e.clientX-lx)*.008;vx=(e.clientY-ly)*.008;ay+=vy;ax=Math.max(-1.2,Math.min(1.2,ax+vx));lx=e.clientX;ly=e.clientY});
+box.addEventListener("pointerup",function(){dr=false;box.style.cursor="grab"});
+box.addEventListener("pointerenter",function(){hv=true});box.addEventListener("pointerleave",function(){hv=false});
+new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(box);
+(function loop(){requestAnimationFrame(loop);if(!vis)return;var R=Math.min(box.clientWidth*.34,175);
+if(!dr){ay+=vy+((rm||hv)?0:.004);ax=Math.max(-1.2,Math.min(1.2,ax+vx));vx*=.95;vy*=.95}
+var ca=Math.cos(ay),sa=Math.sin(ay),cx=Math.cos(ax),sx=Math.sin(ax);
+items.forEach(function(it){var x1=it.x*ca+it.z*sa,z1=-it.x*sa+it.z*ca,y2=it.y*cx-z1*sx,z2=it.y*sx+z1*cx,d=(z2+1)/2,on=cat=="All"||cat==it.c;
+it.e.style.transform="translate(-50%,-50%) translate("+(x1*R*1.15).toFixed(1)+"px,"+(y2*R).toFixed(1)+"px) scale("+(.6+.55*d).toFixed(3)+")";
+it.e.style.opacity=((.25+.75*d)*(on?1:.15)).toFixed(2);it.e.style.zIndex=Math.round(d*100)})})()})();
+/* scroll-driven 3D background */
+(function(){if(!window.THREE)return;var cv=document.createElement("canvas");cv.id="bg3";cv.setAttribute("aria-hidden","true");document.body.prepend(cv);var r;try{r=new THREE.WebGLRenderer({canvas:cv,alpha:true})}catch(x){cv.remove();return}
+r.setPixelRatio(1);var sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(50,1,.1,60);cam.position.z=8;
+var G=[new THREE.IcosahedronGeometry(1,0),new THREE.OctahedronGeometry(1,0),new THREE.TorusKnotGeometry(.7,.22,48,8),new THREE.TetrahedronGeometry(1.1,0),new THREE.DodecahedronGeometry(.9,0),new THREE.TorusGeometry(.9,.25,8,20)],sh=[],cnt=innerWidth<768?4:8,i;
+for(i=0;i<cnt;i++){var m=new THREE.Mesh(G[i%G.length],new THREE.MeshBasicMaterial({color:i%2?0x22D3EE:0x8B5CF6,wireframe:true,transparent:true,opacity:.5}));m.position.set((i%2?1:-1)*(3+Math.random()*3.5),(Math.random()*2-1)*4,-Math.random()*6);m.userData={y0:m.position.y,d:.3+Math.random()*.7,sp:.2+Math.random()*.4};sc.add(m);sh.push(m)}
+function rs(){r.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}rs();addEventListener("resize",rs);
+var px=0,py=0,ls=scrollY,lt=performance.now();addEventListener("pointermove",function(e){px=e.clientX/innerWidth*2-1;py=e.clientY/innerHeight*2-1});
+function frame(now){var dt=Math.min(.05,(now-lt)/1000);lt=now;var sy=scrollY,v=Math.min(.08,Math.abs(sy-ls)*.002);ls=sy;
+sh.forEach(function(m){var u=m.userData;m.position.y=((u.y0+sy*.002*u.d+5)%10+10)%10-5;if(!rm){m.rotation.x+=dt*u.sp+v;m.rotation.y+=dt*u.sp*.8+v}});
+cam.position.x+=((rm?0:px*.5)-cam.position.x)*.05;cam.position.y+=((rm?0:-py*.3)-cam.position.y)*.05;cam.lookAt(0,0,0);r.render(sc,cam)}
+if(rm){frame(lt);addEventListener("scroll",function(){frame(performance.now())},{passive:true});return}
+(function loop(now){requestAnimationFrame(loop);if(!document.hidden)frame(now)})(lt)})();
+/* 3D tilt on project cards */
+if(!rm&&matchMedia("(hover:hover)").matches){var pj=$("#pjs");pj.style.perspective="1200px";
+pj.addEventListener("pointermove",function(e){var c=e.target.closest(".pj");if(!c)return;var b=c.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;c.style.transform="rotateY("+x*5+"deg) rotateX("+(-y*5)+"deg)"});
+pj.addEventListener("pointerout",function(e){var c=e.target.closest(".pj");if(c&&!c.contains(e.relatedTarget))c.style.transform=""})}
+/* particle morph playground */
+(function(){var cv=$("#pt");if(!cv)return;var ctx=cv.getContext("2d"),dpr=Math.min(devicePixelRatio,2),W=0,H=0,P=[],words=["ANURAG","GEN AI","AGENTS","ERAA"],wi=0,mx=-999,my=-999,vis=false,init=false,N0=innerWidth<768?1300:2600;
+$("#pw").innerHTML=words.map(function(w,i){return'<button type="button" aria-pressed="'+(i==0)+'">'+w+"</button>"}).join("");
+function size(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}
+function targets(w){var o=document.createElement("canvas");o.width=W;o.height=H;var c=o.getContext("2d"),fs=Math.min(H*.62,W/(w.length*.66));c.font="600 "+fs+"px 'Space Grotesk',sans-serif";c.textAlign="center";c.textBaseline="middle";c.fillStyle="#fff";c.fillText(w,W/2,H/2);
+var d=c.getImageData(0,0,W,H).data,t=[],st=W<600?4:3;for(var y=0;y<H;y+=st)for(var x=0;x<W;x+=st)if(d[(y*W+x)*4+3]>128)t.push([x,y]);return t}
+function setWord(i,snap){wi=i;var t=targets(words[i]);if(!t.length)return;for(var k=t.length-1;k>0;k--){var j=Math.random()*(k+1)|0,x=t[k];t[k]=t[j];t[j]=x}
+while(P.length<N0)P.push({x:Math.random()*W,y:Math.random()*H,vx:0,vy:0,tx:0,ty:0});
+P.forEach(function(p,k){var q=t[k%t.length];p.tx=q[0];p.ty=q[1];if(snap){p.x=q[0];p.y=q[1]}});
+$("#pw").querySelectorAll("button").forEach(function(b,k){b.setAttribute("aria-pressed",k==i)})}
+$("#pw").onclick=function(e){if(e.target.tagName=="BUTTON")setWord(words.indexOf(e.target.textContent))};
+cv.addEventListener("pointermove",function(e){var b=cv.getBoundingClientRect();mx=e.clientX-b.left;my=e.clientY-b.top});
+cv.addEventListener("pointerleave",function(){mx=my=-999});
+cv.addEventListener("click",function(){setWord((wi+1)%words.length)});
+addEventListener("resize",function(){if(init){size();setWord(wi,true)}});
+new IntersectionObserver(function(e){vis=e[0].isIntersecting;if(vis&&!init){init=true;document.fonts.ready.then(function(){size();setWord(0,rm)})}}).observe(cv);
+setInterval(function(){if(vis&&!rm&&!document.hidden)setWord((wi+1)%words.length)},5000);
+(function loop(){requestAnimationFrame(loop);if(!vis||!P.length)return;ctx.clearRect(0,0,W,H);var k,p,dx,dy,d,f;
+for(k=0;k<P.length;k++){p=P[k];dx=p.x-mx;dy=p.y-my;d=Math.sqrt(dx*dx+dy*dy)||1;if(d<90&&!rm){f=(90-d)/90*7;p.vx+=dx/d*f;p.vy+=dy/d*f}
+p.vx=(p.vx+(p.tx-p.x)*.045)*.86;p.vy=(p.vy+(p.ty-p.y)*.045)*.86;p.x+=p.vx;p.y+=p.vy}
+for(var a=0;a<2;a++){ctx.fillStyle=a?"#22D3EE":"#8B5CF6";for(k=a;k<P.length;k+=2)ctx.fillRect(P[k].x,P[k].y,2,2)}})()})();
+/* 3D neural network lab */
+(function(){var cv=$("#cv4");if(!cv||!window.THREE)return;var r;try{r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true})}catch(x){cv.parentNode.innerHTML='<p class="cp">3D view unavailable: WebGL is not supported here.</p>';return}
+r.setPixelRatio(Math.min(devicePixelRatio,1.5));var sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,50);cam.position.set(0,0,9.5);var root=new THREE.Group();sc.add(root);
+var L=[3,6,6,4,2],nodes=[],E=[],EL=[],W=[],act=[],dv=[],st=[],inp=[.6,-.4,.8],i,j,l,k,
+cy=new THREE.Color(0x22D3EE),vi=new THREE.Color(0x8B5CF6),dk=new THREE.Color(0x1b2250),sg=new THREE.SphereGeometry(.13,16,16);
+for(l=0;l<L.length;l++){nodes[l]=[];dv[l]=[];st[l]=0;for(k=0;k<L[l];k++){var m=new THREE.Mesh(sg,new THREE.MeshBasicMaterial({color:dk.clone()}));m.position.set((l-2)*1.9,(k-(L[l]-1)/2)*.72,Math.sin(k*1.9+l)*.55);root.add(m);nodes[l][k]=m;dv[l][k]=0}}
+var pos=[],a=0;for(l=0;l<L.length-1;l++){EL[l]=[];for(i=0;i<L[l];i++)for(j=0;j<L[l+1];j++){var e={l:l,i:i,j:j,a:a};a+=2;E.push(e);EL[l].push(e);var A=nodes[l][i].position,B=nodes[l+1][j].position;pos.push(A.x,A.y,A.z,B.x,B.y,B.z)}}
+var geo=new THREE.BufferGeometry();geo.setAttribute("position",new THREE.Float32BufferAttribute(pos,3));geo.setAttribute("color",new THREE.BufferAttribute(new Float32Array(pos.length),3));
+root.add(new THREE.LineSegments(geo,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,opacity:.9})));
+var PL=28,pu=[],pi=0,pg=new THREE.SphereGeometry(.07,10,10);for(i=0;i<PL;i++){var pm=new THREE.Mesh(pg,new THREE.MeshBasicMaterial({color:0xffffff}));pm.visible=false;root.add(pm);pu.push({m:pm,e:null,t0:0})}
+function fwd(){act=[inp.slice()];for(l=0;l<L.length-1;l++){var o=[];for(j=0;j<L[l+1];j++){var sm=0;for(i=0;i<L[l];i++)sm+=act[l][i]*W[l][i][j];o.push(Math.tanh(sm))}act.push(o)}}
+function fire(){var now=performance.now(),q;for(l=0;l<L.length;l++)st[l]=now+l*250;for(l=0;l<L.length-1;l++)for(q=0;q<7;q++){var p=pu[pi++%PL];p.e=EL[l][Math.random()*EL[l].length|0];p.t0=now+l*250}}
+function outs(){$("#nno").innerHTML=act[act.length-1].map(function(v,k){return"<div>Output "+(k+1)+": "+(v>=0?"+":"")+v.toFixed(2)+'</div><div class="ob"><i style="'+(v>=0?"":"left:auto;right:50%;")+"width:"+Math.abs(v)*50+'%"></i></div>'}).join("")}
+function paint(){var c=geo.attributes.color;E.forEach(function(e){var w=W[e.l][e.i][e.j],v=Math.min(1,Math.abs(w)/1.3),col=w>0?cy:vi,f=.12+.7*v;for(var n=0;n<2;n++)c.setXYZ(e.a+n,col.r*f,col.g*f,col.b*f)});c.needsUpdate=true}
+function rnd(){W=[];for(l=0;l<L.length-1;l++){W[l]=[];for(i=0;i<L[l];i++){W[l][i]=[];for(j=0;j<L[l+1];j++)W[l][i][j]=(Math.random()*2-1)*1.3}}paint();fwd();fire();outs()}
+$("#nns").innerHTML=["A","B","C"].map(function(n,k){return"<label>Input "+n+': <span class="mono" id="nv'+k+'">'+inp[k].toFixed(2)+'</span><input type="range" min="-1" max="1" step="0.05" value="'+inp[k]+'" data-k="'+k+'"></label>'}).join("");
+$("#nns").oninput=function(e){var k=e.target.dataset.k;if(k==null)return;inp[k]=+e.target.value;$("#nv"+k).textContent=inp[k].toFixed(2);fwd();fire();outs()};
+$("#nnr").onclick=rnd;rnd();
+var rx=.2,ry=-.6,dr=false,lx=0,ly=0,vis=false,first=true;
+cv.addEventListener("pointerdown",function(e){dr=true;lx=e.clientX;ly=e.clientY;cv.setPointerCapture(e.pointerId);cv.style.cursor="grabbing"});
+cv.addEventListener("pointermove",function(e){if(!dr)return;ry+=(e.clientX-lx)*.008;rx=Math.max(-.8,Math.min(.8,rx+(e.clientY-ly)*.008));lx=e.clientX;ly=e.clientY});
+cv.addEventListener("pointerup",function(){dr=false;cv.style.cursor="grab"});
+new IntersectionObserver(function(e){vis=e[0].isIntersecting;if(vis&&first){first=false;fire()}}).observe(cv);
+function rs(){var w=cv.clientWidth,h=cv.clientHeight;if(!w)return;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}new ResizeObserver(rs).observe(cv);rs();
+(function loop(now){requestAnimationFrame(loop);if(!vis)return;if(!dr&&!rm)ry+=.003;root.rotation.set(rx,ry,0);
+for(l=0;l<L.length;l++)for(k=0;k<L[l];k++){var t=act[l][k];if(now>=st[l])dv[l][k]+=(t-dv[l][k])*.12;var d=dv[l][k],n=nodes[l][k];n.material.color.copy(dk).lerp(d>0?cy:vi,Math.min(1,Math.abs(d)*1.1));n.scale.setScalar(.8+.9*Math.abs(d))}
+pu.forEach(function(p){var u=(now-p.t0)/500;if(!p.e||u<0||u>1){p.m.visible=false;return}var A=nodes[p.e.l][p.e.i].position,B=nodes[p.e.l+1][p.e.j].position;p.m.visible=true;p.m.position.lerpVectors(A,B,u)});
+r.render(sc,cam)})(performance.now())})();
+})();
+</script>
+</body>
+</html>
